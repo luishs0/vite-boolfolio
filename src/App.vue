@@ -11,10 +11,11 @@ export default {
 
 
 <template>
-  <h1>Ciao</h1>
 
   <main>
-    <AppMain />
+    <div class="container">
+      <AppMain />
+    </div>
   </main>
 
 </template>

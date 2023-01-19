@@ -30,12 +30,12 @@ export default {
 
 <template>
 
-    <h1>Main</h1>
-    <div class="container">
-        <div class="row g-3">
-            <ProjectCard :project="project" v-for="project in this.projects" :key="project.id" />
-        </div>
+    <h1 class="py-3">Projects</h1>
+
+    <div class="row g-3">
+        <ProjectCard :project="project" v-for="project in this.projects" :key="project.id" />
     </div>
+
 </template>
 
 
