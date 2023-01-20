@@ -12,7 +12,7 @@ export default {
         return {
             baseUrl: 'http://127.0.0.1:8000',
             projects: [],
-            loading: false
+            loading: true
         }
     },
     created() {
@@ -20,7 +20,7 @@ export default {
     },
     methods: {
         getProjects() {
-            axios.get(`${this.baseUrl}/api/projects`).then(resp => { this.projects = resp.data.results; console.log(this.projects); })
+            axios.get(`${this.baseUrl}/api/projects`).then(resp => { this.projects = resp.data.results; console.log(this.projects); this.loading = false; })
         },
     },
 
@@ -29,11 +29,13 @@ export default {
 
 
 <template>
+    <div class="container">
+        <h1 class="py-3">Projects</h1>
 
-    <h1 class="py-3">Projects</h1>
-
-    <div class="row g-3">
-        <ProjectCard :project="project" v-for="project in this.projects" :key="project.id" />
+        <h3 v-if="this.loading" class="text-center">Loading...</h3>
+        <div class="row g-3">
+            <ProjectCard :project="project" v-for="project in this.projects" :key="project.id" />
+        </div>
     </div>
 
 </template>

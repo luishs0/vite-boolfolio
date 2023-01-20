@@ -26,7 +26,6 @@ export default {
 
 <template>
 
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">Luis</a>
@@ -36,8 +35,10 @@ export default {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item" v-for="(item, index) in navitagion" :key="index">
-                        <router-link class="nav-link" aria-current="page" :to="{ name: item.routeName }">Home
+                    <li class="nav-item" v-for="(item, index) in navigation" :key="index">
+                        <router-link class="nav-link" aria-current="page" :to="{ name: item.routeName }">{{
+                            item.label
+                        }}
                         </router-link>
                     </li>
                 </ul>
