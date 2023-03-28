@@ -1,7 +1,3 @@
-# Vue 3 + Vite
+<h1> Crud con Vite y Vue </h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+<p> Este proyecto se trata de la parte fron-end del proyecto "laravel-api", el cual, se encuentra también en mi perfil de gitHub. Consiste en una CRUD que puede modificar los datos de la base de datos desde la interfaz de usuario hecha con Vue a través de la API que he realizado con Laravel en la repository "laravel-api". </p>
